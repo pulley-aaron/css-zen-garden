@@ -3,9 +3,11 @@
 xBackground 
 
 -------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter|Covered+By+Your+Grace");
 body {
   /* this is the page background */
-  background-color: #ffffff; }
+  border: 5px solid #829595;
+  background-image: radial-gradient(#2f4f4f 20%, #587272, #829595); }
 
 /* -------------------------------- 
 
@@ -16,7 +18,7 @@ xPatterns
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid #e6e6e6;
   border-radius: 3px;
-  background: #ffffff;
+  background: #829595;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px; }
 
@@ -26,11 +28,11 @@ xNavigation
 
 -------------------------------- */
 header {
-  background-color: #19191a; }
+  background-color: #00ffa5; }
 
 .cd-logo {
   /* logo box style */
-  background-color: #5f8ee4;
+  background-color: #ffa500;
   width: 120px; }
   @media only screen and (min-width: 1024px) {
     .cd-logo {
@@ -38,57 +40,60 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #19191a; }
+  background: #00ffa5; }
   .cd-main-nav li a {
-    color: #ffffff;
-    border-color: #262627; }
+    color: #829595;
+    border-color: #1affae; }
   @media only screen and (min-width: 1024px) {
     .cd-main-nav li a {
-      color: #7d7d82; }
+      color: #ccffed; }
       .cd-main-nav li a.selected {
-        color: #ffffff;
-        box-shadow: 0 2px 0 #5f8ee4; }
+        color: #829595;
+        box-shadow: 0 2px 0 #ffa500; }
       .no-touch .cd-main-nav li a:hover {
-        color: #ffffff; } }
+        color: #829595; } }
 
 .cd-nav-trigger span {
   /* hamburger menu */
-  background-color: #ffffff; }
+  background-color: #829595; }
   .cd-nav-trigger span::before, .cd-nav-trigger span::after {
     /* upper and lower lines */
-    background-color: #ffffff; }
+    background-color: #829595; }
 
 .nav-is-visible .cd-nav-trigger span {
   /* hide line in the center on mobile when nav is visible */
-  background-color: rgba(255, 255, 255, 0); }
+  background-color: rgba(130, 149, 149, 0); }
   .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
     /* preserve visibility of upper and lower lines - close icon */
-    background-color: white; }
+    background-color: #829595; }
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: #323234; }
+  background-color: #33ffb7; }
   .no-touch .cd-download:hover {
-    background-color: #3f3f41; }
+    background-color: #4dffc0; }
   .cd-download span {
     /* tooltip */
-    background: #5f8ee4;
-    color: #ffffff; }
+    background: #ffa500;
+    color: #829595; }
     .cd-download span::before {
       /* right arrow color */
-      border-color: #5f8ee4; }
+      border-color: #ffa500; }
 
 /* -------------------------------- 
 
 xPage title 
 
--------------------------------- */
+-------------------------------- *
+
 main > h1 {
-  color: #19191a; }
-  @media only screen and (min-width: 1600px) {
-    main > h1 {
-      /* title goes into the header on big devices */
-      color: #ffffff; } }
+	color: $color-2;
+
+	@include MQ(L) {
+		/* title goes into the header on big devices *
+		color: $color-5;
+	}
+}
 
 /* -------------------------------- 
 
@@ -96,20 +101,23 @@ xTypography
 
 -------------------------------- */
 h1, h2 {
-  font-family: "Open Sans", sans-serif;
-  color: #19191a; }
+  font-family: "Covered By Your Grace", cursive;
+  color: #00ffa5;
+  display: block;
+  color: #a500ff;
+  text-shadow: 1px 1px 5px #ffa500, 1px 1px 7px #ffa500, 1px 1px 9px #fff, 1px 1px 11px #fff, 1px 1px 13px #ffa500, 1px 1px 15px #ffa500; }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 .4em; }
   @media only screen and (min-width: 768px) {
     h1 {
-      font-size: 3.2rem; } }
+      font-size: 3rem; } }
   @media only screen and (min-width: 1024px) {
     h1 {
-      font-size: 4rem; } }
+      font-size: 3.5rem; } }
 
 h2 {
   font-weight: bold;
@@ -117,7 +125,7 @@ h2 {
   margin: 1em 0; }
   @media only screen and (min-width: 768px) {
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin: 1em 0 1.4em; } }
 
 section > h2::before {
@@ -125,11 +133,12 @@ section > h2::before {
   color: silver; }
 
 p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #58585b; }
+  font-family: "Architects Daughter", "Open Sans", serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #80ffd2; }
   p a {
-    color: #5f8ee4;
+    color: #ffa500;
     text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     p {
@@ -155,7 +164,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Merriweather", serif; }
+  font-family: "Architects Daughter", "Open Sans", serif; }
 
 a {
   text-decoration: none; }
@@ -164,7 +173,7 @@ img {
   max-width: 100%; }
 
 input, textarea, select {
-  font-family: "Merriweather", serif;
+  font-family: "Architects Daughter", "Open Sans", serif;
   font-size: 1.6rem; }
 
 header {
@@ -518,23 +527,23 @@ section {
   display: block;
   padding: .6em 0; }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #5f8ee4; }
+  background: #ffa500; }
   .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-    background: #759de8; }
+    background: #ffae1a; }
   .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-    background: #497fe0; }
+    background: #e69500; }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #19191a; }
+  background: #00ffa5; }
   .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-    background: #262627; }
+    background: #1affae; }
   .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-    background: #0d0d0d; }
+    background: #00e695; }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #e4655f; }
+  background: #a500ff; }
   .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-    background: #e87a75; }
+    background: #ae1aff; }
   .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-    background: #e05049; }
+    background: #9500e6; }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #e6e6e6; }
   .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
@@ -542,11 +551,11 @@ section {
   .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
     background: #d9d9d9; }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
-  background: #ffffff; }
+  background: #829595; }
   .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
-    background: white; }
+    background: #90a1a1; }
   .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
-    background: #f2f2f2; }
+    background: #748989; }
 @media only screen and (min-width: 768px) {
   .cd-colors li {
     width: 19%;
@@ -572,7 +581,7 @@ section {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: 'Aa - ';
-  color: #5f8ee4; }
+  color: #ffa500; }
 
 .cd-buttons .cd-box:first-of-type {
   border-bottom-left-radius: 0;

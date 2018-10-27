@@ -1,21 +1,36 @@
+// fonts
+
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Covered+By+Your+Grace');
+
+$primary-font: "Architects Daughter", "Open Sans", serif;
+$secondary-font: "Covered By Your Grace", cursive;
 
 h1, h2 {
 	font-family: $secondary-font;
 	color: $color-2;
+        
+        display: block;
+	color: $color-3;
+        text-shadow: 1px 1px 5px $color-1, 
+                    1px 1px 7px $color-1, 
+                    1px 1px 9px #fff, 
+                    1px 1px 11px #fff, 
+                    1px 1px 13px $color-1, 
+                    1px 1px 15px $color-1;
 }
 
 h1 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 	font-weight: 300;
 	line-height: 1.2;
 	margin: 0 0 .4em;
 
 	@include MQ(S) {
-		font-size: 3.2rem;
+		font-size: 3rem;
 	}
 
 	@include MQ(M) {
-		font-size: 4rem;
+		font-size: 3.5rem;
 	}
 }
 
@@ -25,7 +40,7 @@ h2 {
 	margin: 1em 0;
 
 	@include MQ(S) {
-		font-size: 1.8rem;
+		font-size: 2rem;
 		margin: 1em 0 1.4em;
 	}
 }
@@ -36,8 +51,9 @@ section > h2::before {
 }
 
 p {
-	font-size: 1.4rem;
-	line-height: 1.4;
+        font-family: $primary-font;
+	font-size: 1.5rem;
+	line-height: 1.5;
 	color: lighten($color-2, 25%);
 
 	a {
