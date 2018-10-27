@@ -24,7 +24,7 @@ xPatterns
 
 /* -------------------------------- 
 
-xNavigation 
+xStyle Guide Navigation 
 
 -------------------------------- */
 header {
@@ -82,27 +82,11 @@ header {
 
 /* -------------------------------- 
 
-xPage title 
-
--------------------------------- *
-
-main > h1 {
-	color: $color-2;
-
-	@include MQ(L) {
-		/* title goes into the header on big devices *
-		color: $color-5;
-	}
-}
-
-/* -------------------------------- 
-
 xTypography 
 
 -------------------------------- */
-h1, h2 {
+h1, h2, h3 {
   font-family: "Covered By Your Grace", cursive;
-  color: #00ffa5;
   display: block;
   color: #a500ff;
   text-shadow: 1px 1px 5px #ffa500, 1px 1px 7px #ffa500, 1px 1px 9px #fff, 1px 1px 11px #fff, 1px 1px 13px #ffa500, 1px 1px 15px #ffa500; }
@@ -138,12 +122,23 @@ p {
   line-height: 1.5;
   color: #80ffd2; }
   p a {
-    color: #ffa500;
+    color: #00ffa5;
     text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     p {
       font-size: 1.6rem;
       line-height: 1.6; } }
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+nav a, a {
+  font-family: "Architects Daughter", "Open Sans", serif;
+  color: #00ffa5;
+  display: block;
+  text-shadow: 1px 1px 5px #003321, 1px 1px 7px #4dffc0, 1px 1px 9px #fff, 1px 1px 11px #fff, 1px 1px 13px #33ffb7, 1px 1px 15px #1affae; }
 
 /* -------------------------------- 
 
@@ -460,45 +455,6 @@ section {
       margin: 0 4% 4em 0; }
       section:nth-of-type(2n) {
         margin-right: 0; } }
-
-/* xBranding section - basic style */
-.cd-branding .cd-box {
-  margin-bottom: 1em; }
-.cd-branding img {
-  display: block;
-  width: 100%; }
-.cd-branding ul:last-of-type {
-  padding-top: .6em; }
-  .cd-branding ul:last-of-type li {
-    display: inline-block;
-    margin-right: 1em; }
-  .cd-branding ul:last-of-type li:nth-of-type(1) img {
-    width: 90px;
-    height: 90px;
-    border-radius: 1em; }
-  .cd-branding ul:last-of-type li:nth-of-type(2) img {
-    width: 60px;
-    height: 60px;
-    border-radius: .6em; }
-  .cd-branding ul:last-of-type li:nth-of-type(3) img {
-    width: 32px;
-    height: 32px;
-    border-radius: .4em; }
-  .cd-branding ul:last-of-type li:nth-of-type(4) img {
-    width: 16px;
-    height: 16px;
-    border-radius: .2em; }
-@media only screen and (min-width: 768px) {
-  .cd-branding .cd-box {
-    width: 49%;
-    float: left;
-    margin: 0 2% 2em 0; }
-    .cd-branding .cd-box:nth-of-type(2n) {
-      margin-right: 0; }
-  .cd-branding ul:last-of-type {
-    clear: left; }
-    .cd-branding ul:last-of-type li {
-      margin-right: 3em; } }
 
 /* xColor section - basic style */
 .cd-colors li {

@@ -5,10 +5,8 @@
 $primary-font: "Architects Daughter", "Open Sans", serif;
 $secondary-font: "Covered By Your Grace", cursive;
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: $secondary-font;
-	color: $color-2;
-        
         display: block;
 	color: $color-3;
         text-shadow: 1px 1px 5px $color-1, 
@@ -57,7 +55,7 @@ p {
 	color: lighten($color-2, 25%);
 
 	a {
-		color: $color-1;
+		color: $color-2;
 		text-decoration: underline;
 	}
 
