@@ -1,0 +1,27 @@
+/* 
+    Main Stylesheet
+
+    Created on : Nov 3, 2018, 10:04:51 PM
+    Author     : Aaron Pulley
+*/
+/*=============
+    Layout
+=============*/
+/* Header */
+#zen-intro {
+  display: flex;
+  flex-direction: column; }
+
+@media only screen and (min-width: 650px) {
+  #zen-intro {
+    flex-direction: row; } }
+/* Footer */
+.sidebar > .wrapper {
+  display: flex;
+  flex-direction: column; }
+
+@media only screen and (min-width: 650px) {
+  .sidebar > .wrapper {
+    flex-direction: row; } }
+
+/*# sourceMappingURL=style.css.map */

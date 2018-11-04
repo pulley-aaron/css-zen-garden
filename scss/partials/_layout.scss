@@ -1,0 +1,23 @@
+$large-screen-min-size: 650px;
+
+/* Header */
+#zen-intro {
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (min-width: $large-screen-min-size) {
+    #zen-intro {
+        flex-direction: row;
+    }
+}
+
+/* Footer */
+.sidebar > .wrapper {
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (min-width: $large-screen-min-size) {
+    .sidebar > .wrapper {
+        flex-direction: row;
+    }
+}
