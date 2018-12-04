@@ -9,3 +9,21 @@
     Layout
 =============*/
 @import 'partials/layout';
+
+$background-main: #0A1920;
+$background-accent: #132228;
+$background-accent-2: #1D272C;
+
+html {
+    background: radial-gradient(ellipse 110% 250% at 100% 80%, 
+                                $background-main 5%, 
+                                $background-accent 40%, 
+                                $background-main 50%, 
+                                $background-accent-2 70%,
+                                $background-main 75%, 
+                                $background-accent-2 80%,
+                                $background-main 85%);
+    box-shadow: inset -15px -15px 19px 5px rgba(0, 0, 0, 0.4),
+                inset 15px 15px 19px 5px rgba(255, 255, 255, 0.3);
+    padding: 30px;
+}
