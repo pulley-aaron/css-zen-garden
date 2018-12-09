@@ -8,6 +8,8 @@
     Layout
 =============*/
 /* Header */
+@import url("https://fonts.googleapis.com/css?family=Caesar+Dressing");
+@import url("https://fonts.googleapis.com/css?family=Architects+Daughter");
 #zen-intro {
   display: flex;
   flex-direction: column; }
@@ -38,6 +40,104 @@
 @media only screen and (min-width: 650px) {
   .sidebar > .wrapper {
     flex-direction: row; } }
+/*-----------------------------------
+    header
+------------------------------------*/
+h1, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Caesar Dressing', cursive;
+  color: #a500ff;
+  text-shadow: 0px 0px 5px #c966ff,  0px 0px 7px #c966ff,  0px 0px 9px #c966ff,  0px 0px 9px #c966ff,  0px 0px 11px #c966ff,  0px 0px 13px #c966ff; }
+
+h1 {
+  font-size: 3.5rem; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 2.7rem; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 3.5rem; } }
+
+h2 {
+  font-size: 3; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 2.5rem; } }
+
+/*------------------------------
+    body and footer links
+-------------------------------*/
+a {
+  color: #00ffa5;
+  text-decoration: underline; }
+  a:visited {
+    color: #ffa500; }
+  a:hover {
+    text-decoration: none; }
+  a:active {
+    text-shadow: 0px 0px 5px #32ffb7,  0px 0px 7px #32ffb7,  0px 0px 9px #32ffb7,  0px 0px 9px #32ffb7,  0px 0px 11px #32ffb7,  0px 0px 13px #32ffb7; }
+
+/*-----------------------------------
+	body headings
+------------------------------------*/
+body {
+  counter-reset: my-counter; }
+
+h3 {
+  padding-left: 0.5em;
+  font-family: 'Caesar Dressing', cursive;
+  font-variant: small-caps;
+  font-size: 2rem;
+  color: #ffa500;
+  text-shadow: -3px -3px rgba(255, 165, 0, 0.1), -2px -2px rgba(0, 0, 0, 0.1); }
+  @media only screen and (min-width: 768px) {
+    h3 {
+      font-size: 1.7rem; } }
+
+/* Aaron, I tried to get the numbered section working, but couldn't :( 
+it looks in the CSS for body we need counter-reset: myCounter: but I couldn't 
+figure out where to insert that line of CSS code
+
+Beth, Looks like there was no such thing as section > h3 anywhere in the HTML. 
+Please accept this fix below. */
+#zen-intro h3::before, #zen-supporting h3::before {
+  counter-increment: my-counter;
+  content: counter(my-counter,upper-roman) ". ";
+  color: silver; }
+
+/*----------------------------
+	body copy
+-----------------------------*/
+p {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5rem;
+  color: #00ffd2;
+  padding-left: 0.7em; }
+  p a {
+    color: #00ffa5;
+    text-decoration: underline; }
+
+/*------------------------------
+	Aside
+-------------------------------*/
+h3.select, h3.archives, h3.resources {
+  color: #a500ff; }
+
+aside a {
+  color: #ffa500;
+  text-decoration: underline; }
+
+aside a:visited {
+  color: #00ffa5;
+  text-decoration: none; }
+
+aside a:hover {
+  text-decoration: none; }
+
+aside a:active {
+  text-shadow: 0px 0px 5px #ffb732,  0px 0px 7px #ffb732,  0px 0px 9px #ffb732,  0px 0px 9px #ffb732,  0px 0px 11px #ffb732,  0px 0px 13px #ffb732; }
+
 html {
   background: radial-gradient(ellipse 110% 250% at 100% 80%, #0A1920 5%, #132228 40%, #0A1920 50%, #1D272C 70%, #0A1920 75%, #1D272C 80%, #0A1920 85%);
   box-shadow: inset -15px -15px 19px 5px rgba(0, 0, 0, 0.4), inset 15px 15px 19px 5px rgba(255, 255, 255, 0.3);
