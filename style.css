@@ -7,7 +7,9 @@
 /*=============
     Layout
 =============*/
-/* Header */
+/*------------------------------
+	header
+-------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Caesar+Dressing");
 @import url("https://fonts.googleapis.com/css?family=Nova+Cut");
 #zen-intro {
@@ -15,8 +17,6 @@
   flex-direction: column; }
 
 #zen-intro > * {
-  border: 1px solid red;
-  /* Remove later */
   flex: 1 1 30%; }
 
 @media only screen and (min-width: 650px) {
@@ -24,17 +24,27 @@
     flex-direction: row;
     flex-wrap: wrap; }
 
+  header {
+    padding-top: 2em; }
+    header h1 {
+      margin-top: 0; }
+
+  #zen-summary {
+    padding-top: 2em; }
+    #zen-summary p:first-of-type {
+      margin-top: 0; }
+
   #zen-preamble.preamble {
     flex-basis: 100%;
     width: 100%; } }
-/* Footer */
+/*------------------------------
+	aside
+-------------------------------*/
 .sidebar > .wrapper {
   display: flex;
   flex-direction: column; }
 
 .sidebar > .wrapper > * {
-  border: 1px solid blue;
-  /* Remove later */
   flex: 1 1 30%; }
 
 @media only screen and (min-width: 650px) {
@@ -115,7 +125,7 @@ p {
     text-decoration: underline; }
 
 /*------------------------------
-	Aside
+	aside
 -------------------------------*/
 h3.select, h3.archives, h3.resources {
   color: #a500ff; }
@@ -132,6 +142,8 @@ aside a {
     text-shadow: 0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99; }
   aside a:active {
     text-shadow: 0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732; }
+aside li {
+  margin: 0.3em 0; }
 
 html {
   background: radial-gradient(ellipse 110% 250% at 100% 80%, #0A1920 5%, #132228 40%, #0A1920 50%, #1D272C 70%, #0A1920 75%, #1D272C 80%, #0A1920 85%);
