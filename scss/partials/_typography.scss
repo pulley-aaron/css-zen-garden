@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Caesar+Dressing');
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Nova+Cut');
 
 $break-mid: 768px;
 $break-large: 1024px;
@@ -49,18 +49,25 @@ a {
     text-decoration: underline;
 
     &:visited {
-        color: #ffa500;
+        text-decoration: none;
+        color: #00b273;
     }
     &:hover {
         text-decoration: none;
+         text-shadow: 0px 0px 1px #99ffdb, 
+                     0px 0px 1px #99ffdb, 
+                     0px 0px 1px #99ffdb, 
+                     0px 0px 1px #99ffdb, 
+                     0px 0px 1px #99ffdb, 
+                     0px 0px 1px #99ffdb;
     }
     &:active{
-        text-shadow: 0px 0px 5px #32ffb7, 
-                     0px 0px 7px #32ffb7, 
-                     0px 0px 9px #32ffb7, 
-                     0px 0px 9px #32ffb7, 
-                     0px 0px 11px #32ffb7, 
-                     0px 0px 13px #32ffb7;
+        text-shadow: 0px 0px 2px #32ffb7, 
+                     0px 0px 2px #32ffb7, 
+                     0px 0px 2px #32ffb7, 
+                     0px 0px 2px #32ffb7, 
+                     0px 0px 2px #32ffb7, 
+                     0px 0px 2px #32ffb7;
     }
 }
 
@@ -87,14 +94,13 @@ h3 {
 /* Aaron, I tried to get the numbered section working, but couldn't :( 
 it looks in the CSS for body we need counter-reset: myCounter: but I couldn't 
 figure out where to insert that line of CSS code
-
 Beth, Looks like there was no such thing as section > h3 anywhere in the HTML. 
 Please accept this fix below. */
 #zen-intro, #zen-supporting {
     & h3::before {
         counter-increment: my-counter;
         content: counter(my-counter, upper-roman) ". ";
-        color: silver;
+        color: #ffa500;
     }
 }
 
@@ -103,7 +109,7 @@ Please accept this fix below. */
 -----------------------------*/
 
 p {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Nova Cut', cursive;
     font-size: 1.5rem;
     color: #00ffd2;
     padding-left: 0.7em;
@@ -119,21 +125,28 @@ p {
 -------------------------------*/
 h3.select, h3.archives, h3.resources { color: #a500ff; }
 aside a {
+	font-family: 'Nova Cut', cursive;
     color: #ffa500;
     text-decoration: underline;
 }
 aside a:visited {
-    color: #00ffa5;
     text-decoration: none;
+    color: #b27300;
 }
 aside a:hover {
     text-decoration: none;
+    text-shadow: 0px 0px 1px #ffdb99, 
+                     0px 0px 1px #ffdb99, 
+                     0px 0px 1px #ffdb99, 
+                     0px 0px 1px #ffdb99, 
+                     0px 0px 1px #ffdb99, 
+                     0px 0px 1px #ffdb99;
 }
 aside a:active {
-    text-shadow: 0px 0px 5px #ffb732, 
-                 0px 0px 7px #ffb732, 
-                 0px 0px 9px #ffb732, 
-                 0px 0px 9px #ffb732, 
-                 0px 0px 11px #ffb732, 
-                 0px 0px 13px #ffb732;
+    text-shadow: 0px 0px 2px #ffb732, 
+                 0px 0px 2px #ffb732, 
+                 0px 0px 2px #ffb732, 
+                 0px 0px 2px #ffb732, 
+                 0px 0px 2px #ffb732, 
+                 0px 0px 2px #ffb732;
 }
