@@ -47,6 +47,15 @@
 @media only screen and (min-width: 650px) {
   .sidebar > .wrapper {
     flex-direction: row; } }
+/*------------------------------
+	footer layout
+-------------------------------*/
+footer {
+  display: flex;
+  margin: auto auto 2em;
+  max-width: 20em;
+  justify-content: space-between; }
+
 /*-----------------------------------
     header
 ------------------------------------*/

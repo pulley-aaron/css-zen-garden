@@ -49,3 +49,14 @@
         flex-direction: row;
     }
 }
+
+/*------------------------------
+	footer layout
+-------------------------------*/
+
+footer {
+    display: flex;
+    margin: auto auto 2em;
+    max-width: 20em;
+    justify-content: space-between;
+}
