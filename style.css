@@ -4,11 +4,8 @@
     Created on : Nov 3, 2018, 10:04:51 PM
     Author     : Aaron Pulley
 */
-/*=============
-    Layout
-=============*/
 /*------------------------------
-	header
+	header layout
 -------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Caesar+Dressing");
 @import url("https://fonts.googleapis.com/css?family=Nova+Cut");
@@ -38,7 +35,7 @@
     flex-basis: 100%;
     width: 100%; } }
 /*------------------------------
-	aside
+	aside layout
 -------------------------------*/
 .sidebar > .wrapper {
   display: flex;
@@ -146,8 +143,8 @@ aside li {
   margin: 0.3em 0; }
 
 html {
-  background: radial-gradient(ellipse 110% 250% at 100% 80%, #0A1920 5%, #132228 40%, #0A1920 50%, #1D272C 70%, #0A1920 75%, #1D272C 80%, #0A1920 85%);
-  box-shadow: inset -15px -15px 19px 5px rgba(0, 0, 0, 0.4), inset 15px 15px 19px 5px rgba(255, 255, 255, 0.3);
+  background: radial-gradient(ellipse 110% 200% at 100% 80%, #0A1920 5%, #132228 40%, #0A1920 50%, #1D272C 70%, #0A1920 75%, #1D272C 80%, #0A1920 85%);
+  box-shadow: inset -15px -15px 10px 3px rgba(0, 0, 0, 0.4), inset 15px 15px 10px 3px rgba(255, 255, 255, 0.3);
   padding: 30px; }
 
 /*# sourceMappingURL=style.css.map */
