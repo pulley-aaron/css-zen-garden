@@ -58,6 +58,15 @@ footer {
   max-width: 20em;
   justify-content: space-between; }
 
+html {
+  font-size: 12px; }
+
+@media only screen and (min-width: 650px) {
+  html {
+    font-size: 14px; } }
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 16px; } }
 /*-----------------------------------
     header
 ------------------------------------*/
@@ -97,10 +106,7 @@ h1 {
       font-size: 3.5rem; } }
 
 h2 {
-  font-size: 3; }
-  @media only screen and (min-width: 650px) {
-    h2 {
-      font-size: 2.5rem; } }
+  font-size: 1.5rem; }
 
 /*------------------------------
     body and footer links
@@ -135,27 +141,25 @@ h3 {
   text-shadow: -3px -3px rgba(255, 165, 0, 0.1), -2px -2px rgba(0, 0, 0, 0.1); }
 
 /* Pebbles */
-.main h3::before, .main h3::after, #zen-preamble h3::before, #zen-preamble h3::after {
-  display: inline-block;
-  content: ' ';
-  width: 1em;
-  height: 1em;
-  background: radial-gradient(ellipse 110% 100% at 100% 80%, #1D272C 10%, #38464C 80%, #52626A 90%);
-  /*-webkit-filter: blur(1px);
-  filter: blur(1px);*/
-  box-shadow: 1px 2px 30px 10px #ffa500; }
-.main h3::before, #zen-preamble h3::before {
-  border-radius: 50% 50% 70% 60% / 80% 60% 20% 40%;
-  margin-right: 1em; }
-.main h3::after, #zen-preamble h3::after {
-  border-radius: 50% 90% 75% 60% / 60% 80% 50% 60%;
-  margin-left: 1em; }
+@media only screen and (min-width: 650px) {
+  .main h3::before, .main h3::after, #zen-preamble h3::before, #zen-preamble h3::after {
+    display: inline-block;
+    content: ' ';
+    width: 1em;
+    height: 1em;
+    background: radial-gradient(ellipse 110% 100% at 100% 80%, #1D272C 10%, #38464C 80%, #52626A 90%);
+    box-shadow: 1px 2px 30px 10px #ffa500; }
+  .main h3::before, #zen-preamble h3::before {
+    border-radius: 50% 50% 70% 60% / 80% 60% 20% 40%;
+    margin-right: 1em; }
+  .main h3::after, #zen-preamble h3::after {
+    border-radius: 50% 90% 75% 60% / 60% 80% 50% 60%;
+    margin-left: 1em; }
 
-#zen-explanation h3::before, #zen-benefits h3::before {
-  border-radius: 90% 50% 40% 25% / 55% 30% 100% 40%; }
-#zen-explanation h3::after, #zen-benefits h3::after {
-  border-radius: 90% 60% 60% 80% / 60% 30% 50% 40%; }
-
+  #zen-explanation h3::before, #zen-benefits h3::before {
+    border-radius: 90% 50% 40% 25% / 55% 30% 100% 40%; }
+  #zen-explanation h3::after, #zen-benefits h3::after {
+    border-radius: 90% 60% 60% 80% / 60% 30% 50% 40%; } }
 @media only screen and (min-width: 650px) {
   font-size: 1.7rem; }
 /*----------------------------
@@ -211,9 +215,11 @@ aside {
       text-shadow: 0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99; }
     aside a:active {
       text-shadow: 0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732; }
-  aside ul li {
+  aside ul {
     list-style: none;
-    margin: 0.3em 0; }
+    padding-left: 1em; }
+    aside ul li {
+      margin: 0.3em 0; }
 
 html {
   background: radial-gradient(ellipse 110% 200% at 100% 80%, #0A1920 5%, #132228 40%, #0A1920 50%, #1D272C 70%, #0A1920 75%, #1D272C 80%, #0A1920 85%);
