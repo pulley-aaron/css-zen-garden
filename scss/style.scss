@@ -5,15 +5,19 @@
     Author     : Aaron Pulley
 */
 
+/* Breakpoints */
 $mid-screen-min-size: 650px;
 $large-screen-min-size: 1024px;
 
-@import 'partials/layout';
-@import 'partials/typography';
-
+/* Colors */
 $background-main: #0A1920;
 $background-accent: #132228;
 $background-accent-2: #1D272C;
+$background-accent-3: #38464C;
+$background-accent-4: #52626A;
+
+@import 'partials/layout';
+@import 'partials/typography';
 
 html {
     background: radial-gradient(ellipse 110% 200% at 100% 80%, 

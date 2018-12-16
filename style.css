@@ -4,6 +4,8 @@
     Created on : Nov 3, 2018, 10:04:51 PM
     Author     : Aaron Pulley
 */
+/* Breakpoints */
+/* Colors */
 /*------------------------------
 	header layout
 -------------------------------*/
@@ -64,8 +66,27 @@ h1, h2 {
   text-transform: uppercase;
   font-family: 'Caesar Dressing', cursive;
   color: #a500ff;
-  text-shadow: 0px 0px 5px #c966ff,  0px 0px 7px #c966ff,  0px 0px 9px #c966ff,  0px 0px 9px #c966ff,  0px 0px 11px #c966ff,  0px 0px 13px #c966ff; }
-
+  -webkit-animation: neon 3.5s ease-in-out infinite alternate;
+  -moz-animation: neon 3.5s ease-in-out infinite alternate;
+  animation: neon 3.5s ease-in-out infinite alternate;
+  /* webkit glow code*/
+  /*mozilla glow code*/
+  /*normal glow code*/ }
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0px 0px 3px #ae19ff,  0px 0px 4px #ae19ff,   0px 0px 5px #c966ff, 0px 0px 5px #d27fff, 0px 0px 6px #f6e5ff,  0px 0px 7px #f6e5ff; }
+  to {
+    text-shadow: 0px 0px 1.5px #ae19ff,  0px 0px 2px #ae19ff,   0px 0px 2.5px #c966ff, 0px 0px 2.5px #d27fff, 0px 0px 3px #f6e5ff,  0px 0px 3.5px #f6e5ff; } }
+@-moz-keyframes {
+  from {
+    text-shadow: 0px 0px 3px #ae19ff,  0px 0px 4px #ae19ff,   0px 0px 5px #c966ff, 0px 0px 5px #d27fff, 0px 0px 6px #f6e5ff,  0px 0px 7px #f6e5ff; }
+  to {
+    text-shadow: 0px 0px 1.5px #ae19ff,  0px 0px 2px #ae19ff,   0px 0px 2.5px #c966ff, 0px 0px 2.5px #d27fff, 0px 0px 3px #f6e5ff,  0px 0px 3.5px #f6e5ff; } }
+@keyframes neon {
+  from {
+    text-shadow: 0px 0px 3px #ae19ff,  0px 0px 4px #ae19ff,   0px 0px 5px #c966ff, 0px 0px 5px #d27fff, 0px 0px 6px #f6e5ff,  0px 0px 7px #f6e5ff; }
+  to {
+    text-shadow: 0px 0px 1.5px #ae19ff,  0px 0px 2px #ae19ff,   0px 0px 2.5px #c966ff, 0px 0px 2.5px #d27fff, 0px 0px 3px #f6e5ff,  0px 0px 3.5px #f6e5ff; } }
 h1 {
   font-size: 3.5rem; }
   @media only screen and (min-width: 650px) {
@@ -86,7 +107,13 @@ h2 {
 -------------------------------*/
 a {
   color: #00ffa5;
-  text-decoration: underline; }
+  font-family: 'Nova Cut', cursive;
+  text-decoration: underline;
+  -webkit-transition: text-shadow 0.5s linear;
+  -moz-transition: text-shadow 0.5s linear;
+  -ms-transition: text-shadow 0.5s linear;
+  -o-transition: text-shadow 0.5s linear;
+  transition: text-shadow 0.5s linear; }
   a:visited {
     text-decoration: none;
     color: #00b273; }
@@ -94,14 +121,11 @@ a {
     text-decoration: none;
     text-shadow: 0px 0px 1px #99ffdb,  0px 0px 1px #99ffdb,  0px 0px 1px #99ffdb,  0px 0px 1px #99ffdb,  0px 0px 1px #99ffdb,  0px 0px 1px #99ffdb; }
   a:active {
-    text-shadow: 0px 0px 2px #32ffb7,  0px 0px 2px #32ffb7,  0px 0px 2px #32ffb7,  0px 0px 2px #32ffb7,  0px 0px 2px #32ffb7,  0px 0px 2px #32ffb7; }
+    color: #001910; }
 
 /*-----------------------------------
 	body headings
 ------------------------------------*/
-body {
-  counter-reset: my-counter; }
-
 h3 {
   padding-left: 0.5em;
   font-family: 'Caesar Dressing', cursive;
@@ -109,15 +133,31 @@ h3 {
   font-size: 2rem;
   color: #ffa500;
   text-shadow: -3px -3px rgba(255, 165, 0, 0.1), -2px -2px rgba(0, 0, 0, 0.1); }
-  @media only screen and (min-width: 650px) {
-    h3 {
-      font-size: 1.7rem; } }
 
-#zen-intro h3::before, #zen-supporting h3::before {
-  counter-increment: my-counter;
-  content: counter(my-counter,upper-roman) ". ";
-  color: #ffa500; }
+/* Pebbles */
+.main h3::before, .main h3::after, #zen-preamble h3::before, #zen-preamble h3::after {
+  display: inline-block;
+  content: ' ';
+  width: 1em;
+  height: 1em;
+  background: radial-gradient(ellipse 110% 100% at 100% 80%, #1D272C 10%, #38464C 80%, #52626A 90%);
+  /*-webkit-filter: blur(1px);
+  filter: blur(1px);*/
+  box-shadow: 1px 2px 30px 10px #ffa500; }
+.main h3::before, #zen-preamble h3::before {
+  border-radius: 50% 50% 70% 60% / 80% 60% 20% 40%;
+  margin-right: 1em; }
+.main h3::after, #zen-preamble h3::after {
+  border-radius: 50% 90% 75% 60% / 60% 80% 50% 60%;
+  margin-left: 1em; }
 
+#zen-explanation h3::before, #zen-benefits h3::before {
+  border-radius: 90% 50% 40% 25% / 55% 30% 100% 40%; }
+#zen-explanation h3::after, #zen-benefits h3::after {
+  border-radius: 90% 60% 60% 80% / 60% 30% 50% 40%; }
+
+@media only screen and (min-width: 650px) {
+  font-size: 1.7rem; }
 /*----------------------------
 	body copy
 -----------------------------*/
@@ -134,22 +174,46 @@ p {
 	aside
 -------------------------------*/
 h3.select, h3.archives, h3.resources {
-  color: #a500ff; }
-
-aside a {
-  font-family: 'Nova Cut', cursive;
+  color: #a500ff;
+  letter-spacing: 2.5px;
+  -webkit-animation: neon 3.5s ease-in-out infinite alternate;
+  -moz-animation: neon 3.5s ease-in-out infinite alternate;
+  animation: neon 3.5s ease-in-out infinite alternate;
+  /* webkit glow code*/
+  /* mozilla glow code*/
+  /*normal glow code*/ }
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0px 0px 1px #ae19ff,  0px 0px 1.5px #ae19ff,   0px 0px 2px #c966ff, 0px 0px 2px #d27fff, 0px 0px 2.5px #f6e5ff,  0px 0px 3px #f6e5ff; }
+  to {
+    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2x #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
+@-moz-keyframes {
+  from {
+    text-shadow: 0px 0px 2px #ae19ff,  0px 0px 3px #ae19ff,   0px 0px 4px #c966ff, 0px 0px 5px #d27fff, 0px 0px 6px #f6e5ff,  0px 0px 7px #f6e5ff; }
+  to {
+    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2x #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
+@keyframes neon {
+  from {
+    text-shadow: 0px 0px 2px #ae19ff,  0px 0px 3px #ae19ff,   0px 0px 4px #c966ff, 0px 0px 5px #d27fff, 0px 0px 6px #f6e5ff,  0px 0px 7px #f6e5ff; }
+  to {
+    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2x #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
+aside {
   color: #ffa500;
-  text-decoration: underline; }
-  aside a:visited {
-    text-decoration: none;
-    color: #b27300; }
-  aside a:hover {
-    text-decoration: none;
-    text-shadow: 0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99; }
-  aside a:active {
-    text-shadow: 0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732; }
-aside li {
-  margin: 0.3em 0; }
+  font-family: 'Nova Cut', cursive; }
+  aside a {
+    color: #ffa500;
+    text-decoration: underline; }
+    aside a:visited {
+      text-decoration: none;
+      color: #b27300; }
+    aside a:hover {
+      text-decoration: none;
+      text-shadow: 0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99,  0px 0px 1px #ffdb99; }
+    aside a:active {
+      text-shadow: 0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732,  0px 0px 2px #ffb732; }
+  aside ul li {
+    list-style: none;
+    margin: 0.3em 0; }
 
 html {
   background: radial-gradient(ellipse 110% 200% at 100% 80%, #0A1920 5%, #132228 40%, #0A1920 50%, #1D272C 70%, #0A1920 75%, #1D272C 80%, #0A1920 85%);
