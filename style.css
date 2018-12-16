@@ -190,17 +190,17 @@ h3.select, h3.archives, h3.resources {
   from {
     text-shadow: 0px 0px 1px #ae19ff,  0px 0px 1.5px #ae19ff,   0px 0px 2px #c966ff, 0px 0px 2px #d27fff, 0px 0px 2.5px #f6e5ff,  0px 0px 3px #f6e5ff; }
   to {
-    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2x #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
+    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2px #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
 @-moz-keyframes {
   from {
     text-shadow: 0px 0px 2px #ae19ff,  0px 0px 3px #ae19ff,   0px 0px 4px #c966ff, 0px 0px 5px #d27fff, 0px 0px 6px #f6e5ff,  0px 0px 7px #f6e5ff; }
   to {
-    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2x #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
+    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2px #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
 @keyframes neon {
   from {
     text-shadow: 0px 0px 2px #ae19ff,  0px 0px 3px #ae19ff,   0px 0px 4px #c966ff, 0px 0px 5px #d27fff, 0px 0px 6px #f6e5ff,  0px 0px 7px #f6e5ff; }
   to {
-    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2x #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
+    text-shadow: 0px 0px .5px #ae19ff,  0px 0px 1px #ae19ff,   0px 0px 1.5px #c966ff, 0px 0px 1.5px #d27fff, 0px 0px 2px #f6e5ff,  0px 0px 2.5px #f6e5ff; } }
 aside {
   color: #ffa500;
   font-family: 'Nova Cut', cursive; }
